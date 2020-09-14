@@ -42,8 +42,8 @@ def won?(board)
   end
 
   def draw?(board)
-    draw = full?()
-    won = won?()
+    draw = full?(board)
+    won = won?(board)
     if board == draw
       return true
     elsif board == won
