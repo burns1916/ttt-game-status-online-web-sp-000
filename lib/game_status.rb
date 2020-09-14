@@ -34,11 +34,7 @@ def won?(board)
   end
 
   def full?(board)
-    if board.none?{|i| i == " "}
-    return true
-  else
-    return false
-  end
+    board.none?{|i| i == " "}
   end
 
   def draw?(board)
